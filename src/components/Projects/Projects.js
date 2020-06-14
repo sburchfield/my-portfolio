@@ -12,8 +12,6 @@ import bbq from './images/bbqsoap.png'
 import bbq_bw from './images/bbqsoap_bw.png'
 import cabbage from './images/cabbageHead.png'
 import cabbage_bw from './images/cabbageHead_bw.png'
-import etbvc from './images/etbvc.png'
-import etbvc_bw from './images/etbvc_bw.png'
 import pyaa from './images/pyaa.png'
 import pyaa_bw from './images/pyaa_bw.png'
 import river from './images/riversGame.png'
@@ -21,7 +19,6 @@ import river_bw from './images/riversGame_bw.png'
 
 import './Projects.css'
 
-var etbvcDes = "This was my first professional job as a designer/developer. It is a simple mostly static website for a local Optemitrist with a form that allows the user to request an appointment."
 var pyaaDes = "I was the lead developer on this project. I handled both the design and logic to this dynamic site."
 var cabbageDes = 'This was a design project for my final semester in school. The objective for the class was to build a working marketing site for a local coffeeshop named "Cabbagehead Cafe"'
 var riverDes = "This is an ongoing project of mine. It is a custom name game I built for my nephew. It gives him puzzles that he can relate to with people he knows."
@@ -35,7 +32,7 @@ configureAnchors({offset: -60})
 class Projects extends Component {
 
   componentDidMount() {
-    let imageList = [joe_bw, alphabet_bw, bbq_bw, cabbage_bw, etbvc_bw, pyaa_bw, river_bw]
+    let imageList = [joe_bw, alphabet_bw, bbq_bw, cabbage_bw, pyaa_bw, river_bw]
     imageList.forEach((image) => {
       new Image().src = image
     });
@@ -49,11 +46,10 @@ return(
     <div className="row projectsWrapper justify-content-around">
       <div className="col-lg">
         <Pic
-          title={"ETBVC"}
-          description={etbvcDes}
-          img={etbvc}
-          bwImg={etbvc_bw}
-          link={"https://etbvc.com"} />
+        title={"BBQ Soap"}
+        description={bbqDes}
+        img={bbq}
+        bwImg={bbq_bw} />
       </div>
       <div className="col-lg">
         <Pic
@@ -86,13 +82,6 @@ return(
         img={joe}
         bwImg={joe_bw}
         link={"https://sburchfield.github.io/josephus_problem/"} />
-      </div>
-      <div className="col-lg">
-        <Pic
-        title={"BBQ Soap"}
-        description={bbqDes}
-        img={bbq}
-        bwImg={bbq_bw} />
       </div>
       <div className="col-lg">
         <Pic
