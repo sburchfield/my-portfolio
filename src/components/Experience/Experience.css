@@ -1,0 +1,23 @@
+#experiencesInner{
+	text-align: center;
+	padding: 0 1em;
+}
+
+
+#experiencesInner h2{
+	letter-spacing: .05em;
+	font-size: 3.2em;
+	font-weight: bold;
+	padding-top: 0.5em;
+}
+
+.card{
+	margin: 0.5em 0;
+	box-shadow: 9px 5px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 786px){
+	#experiencesInner{
+		padding: 0;
+	}
+}

@@ -1,0 +1,25 @@
+#contactInner{
+	text-align: center;
+	background-color: #fff;
+	padding: 0.5em 0 2em 0;
+}
+
+
+.contactForm{
+	width: 40%;
+	margin: 0 auto;
+}
+
+#contactInner h2{
+	/* color: #1eb473; */
+	/* padding-top: .5em; */
+	text-align: center;
+	letter-spacing: .1em;
+	font-size: 3.2em;
+	font-weight: bold;
+}
+
+#contactInner h4{
+	/* color: #e6e6e5; */
+	/* padding: 1em; */
+}
