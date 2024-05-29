@@ -14,7 +14,9 @@ const profile = props => (
 						<p id="bio">Web Developer specialized in full stack development. Experienced with all stages of development, including design and logic, for dynamic web projects. Well educated and highly knowledgeable in numerous Web Development Languages including HTML5, CSS3, JavaScript, GoLang, and PHP.</p>
 				</div>
 
-				<div className="col-lg animated zoomIn" id="profilepic"></div>
+				<div className="col-lg">
+					<div className="animated zoomIn" id="profilepic"></div>
+				</div>
 
     		<div id="details" className="col-lg animated slideInRight">
     			<h4 id="demoLabel">Demographics</h4>

@@ -1,111 +1,90 @@
-#profileInner{
-	margin: 1em 0;
-	padding-top: 3em;
-	width: 100%;
-	min-height: 35vh;
+#profileInner {
+    margin: 1em 0;
+    padding-top: 3em;
+    width: 100%;
+    min-height: 35vh;
 }
 
-
-/* #profile h2{
-	padding: 0 0 0.5em 0;
-	color: #1eb473;
-	text-align: center;
-	font-size: 3.2em;
-	font-weight: bold;
-} */
-
-#profilepic{
-	background-image: url(./images/samhead.png);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 250px;
+#profilepic {
+    width: 18rem;
+    height: 18rem;
+    margin: 0 auto;
+    background-image: url(./images/samhead.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.22), 0 10px 13px 0px rgba(0, 0, 0, 0.34), inset 0 18px 18px 0 rgba(255, 255, 255, 0.35), inset 0 -18px 18px 0 rgba(0, 0, 0, 0.10);
 }
 
-#details{
-	text-align: center;
+#details {
+    text-align: center;
 }
 
-#details h4{
-	/* color: #1eb473; */
-	font-size: 2em;
-	font-weight: bold;
-	padding-bottom: 0.05em;
+#details h4 {
+    /* color: #1eb473; */
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 0.05em;
 }
 
-#details h5{
-	font-weight: bold;
-	font-size: 1.5em;
+#details h5 {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
-#details p{
-	font-size: 1.1em;
+#details p {
+    font-size: 1.1em;
 }
 
-#about{
-	text-align: center;
+#about {
+    text-align: center;
 }
 
-#about h4{
-	/* color:  #1eb473; */
-	font-size: 2em;
-	font-weight: bold;
+#about h4 {
+    /* color:  #1eb473; */
+    font-size: 2em;
+    font-weight: bold;
 }
 
-#about p{
-	font-size: 1em;
-	text-align: justify;
-	text-indent: 2em;
+#about p {
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 2em;
 }
 
-@media (max-width: 1024px){
-	#profileInner{
-		padding-top: 1.5em;
-	}
-
-	#profilepic{
-		height: 220px;
-	}
-
-	#details h4{
-		font-size: 1.75em;
-	}
-
-	#details h5{
-		font-size: 1.25em;
-	}
-
-	#details p{
-		font-size: 1em;
-	}
-
-	#about h4{
-		font-size: 1.75em;
-	}
-
-	#about p{
-		font-size: 0.9em;
-		padding: 0 0.45em;
-	}
+@media (max-width: 1024px) {
+    #profileInner {
+        padding-top: 1.5em;
+    }
+    #details h4 {
+        font-size: 1.75em;
+    }
+    #details h5 {
+        font-size: 1.25em;
+    }
+    #details p {
+        font-size: 1em;
+    }
+    #about h4 {
+        font-size: 1.75em;
+    }
+    #about p {
+        font-size: 0.9em;
+        padding: 0 0.45em;
+    }
 }
 
-
-@media (max-width: 786px){
-	#profileInner{
-		padding-top: 1em;
-	}
-
-	#profilepic{
-		margin: .75em auto 1.5em auto;
-	}
-
-	#about h4{
-		font-size: 2em;
-	}
-
-	#about p{
-		font-size: 1em;
-		padding: 0;
-		margin-bottom: 0;
-	}
+@media (max-width: 786px) {
+    #profileInner {
+        padding-top: 1em;
+    }
+    #about h4 {
+        font-size: 2em;
+    }
+    #about p {
+        font-size: 1em;
+        padding: 0;
+        margin-bottom: 0;
+    }
 }
