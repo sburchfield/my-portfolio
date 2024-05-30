@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
 
-import background from './images/header-background.png'
+import background from './images/background.png'
 
 import './Header.css'
 
