@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import './App.css';
+import ReactLoading from 'react-loading';
+
 import './animate.css';
-import Toolbar from './components/Toolbar/Toolbar';
-import SideDrawer from './components/SideDrawer/SideDrawer';
+import './App.css';
+
 import Backdrop from './components/Backdrop/Backdrop';
+import Experience from './components/Experience/Experience';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Profile from './components/Profile/Profile';
 import Projects from './components/Projects/Projects';
-import Experience from './components/Experience/Experience';
+import SideDrawer from './components/SideDrawer/SideDrawer';
 import Skills from './components/Skills/Skills';
-import Footer from './components/Footer/Footer';
-import ReactLoading from 'react-loading';
+import Snake from './components/Snake/Snake';
+import Toolbar from './components/Toolbar/Toolbar';
 
 
 function demoAsyncCall() {
@@ -69,6 +72,7 @@ class App extends Component {
         </div>
         <div className="container">
           <Experience />
+          <Snake />
           <Skills />
         </div>
         <Footer />
