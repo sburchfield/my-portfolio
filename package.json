@@ -13,7 +13,7 @@
     "react-icons": "^3.8.0",
     "react-images": "^0.5.19",
     "react-loading": "^2.0.3",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.0.1",
     "react-scrollable-anchor": "^0.6.1"
   },
   "scripts": {
