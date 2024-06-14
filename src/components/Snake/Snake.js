@@ -159,6 +159,7 @@ const SnakeGame = () => {
       clearInterval(intervalId.current);
       window.removeEventListener('keydown', keyPush);
     };
+  // eslint-disable-next-line
   }, [score, keyPush, isGameStarted]);
 
   return (
