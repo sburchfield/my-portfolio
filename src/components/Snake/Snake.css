@@ -1,0 +1,15 @@
+.start-button {
+    position: absolute;
+    margin: 11.65rem 10rem;
+    width: 5rem;
+    z-index: 1;
+}
+
+.game-over {
+    position: absolute;
+    margin: 8rem;
+    width: 9rem;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
