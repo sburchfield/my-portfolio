@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 
+import './Snake.css';
+
 const SnakeGame = () => {
   const canvasRef = useRef(null);
   const playerPositionX = useRef(10);
@@ -29,12 +31,12 @@ const SnakeGame = () => {
     snakeSquaresPositions.current = [];
     setScore(0);
     setIsGameOver(false);
-    setIsGameStarted(false); 
     setPlayerStartedMoving(false);
   };
 
   const keyPush = useCallback((e) => {    
     if (!isGameStarted) return; 
+    if (gameOver) return;
     setPlayerStartedMoving(true);
 
     switch (e.keyCode) {
@@ -73,7 +75,7 @@ const SnakeGame = () => {
       default:
         break;
     }
-  }, [isGameStarted]);  // Only recreate the function when isGameStarted changes
+  }, [isGameStarted, gameOver]);  // Only recreate the function when isGameStarted changes
   
   useEffect(() => {
     const canv = canvasRef.current;
@@ -137,6 +139,12 @@ const SnakeGame = () => {
             if (score > highScore) {
               setHighScore(score);
             }
+            playerPositionX.current = 10;
+            playerPositionY.current = 10;
+            snakeTrajectoryX.current = 0;
+            snakeTrajectoryY.current = 0;
+            snakeLength.current = 5;
+            snakeSquaresPositions.current = [];
           }
         }
       }
@@ -165,26 +173,22 @@ const SnakeGame = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h2 style={{ textAlign: 'center' }}>Snake</h2>
-
-      {gameOver ? (
-        <div>
-          <h1>Game Over</h1>
-          <p>Your score: {score}</p>
-          <button onClick={resetGame}>Restart</button>
+        <div style={{position: "relative"}}>
+          {!isGameStarted ? (
+            <button onClick={() => setIsGameStarted(true)}
+                    className="btn btn-success start-button">Start</button>
+          ) : (
+             gameOver ? (
+            <div className="game-over">
+              <h3 className="white">Game Over</h3>
+              <h5 className="white">Score: {score}</h5>
+              <button onClick={resetGame} className="btn btn-secondary">Restart</button>
+            </div>
+            ) : null 
+          )}
+            <canvas ref={canvasRef} width="400" height="400" style={{ display: 'block', margin: '0 auto', position: "relative" }}></canvas>
         </div>
-      ) : (
-        <div>
-            <button onClick={() => setIsGameStarted(true)}>Start</button>
-            <canvas ref={canvasRef} width="400" height="400" style={{ display: 'block', margin: '0 auto' }}></canvas>
-        </div>
-      )}
-
-      <ul>
-        <li>Use arrow keys or 'W', 'A', 'S', 'D' to control the snake.</li>
-        <li>Collect red squares to increase the snake's length.</li>
-        <li>Snake dies if it hits itself.</li>
-      </ul>
-    </div>
+      </div>
   );
 }
 
