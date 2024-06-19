@@ -1,15 +1,14 @@
-.start-button {
-    position: absolute;
-    margin: 11.65rem 10rem;
-    width: 5rem;
-    z-index: 1;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+#snake_wrapper {
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
 }
 
-.game-over {
-    position: absolute;
-    margin: 8rem;
-    width: 9rem;
-    z-index: 1;
+table {
     text-align: center;
-    color: white;
+    margin: 1rem auto;
+}
+
+table th {
+    min-width: 10rem;
 }
