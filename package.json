@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^1.7.2",
     "body-parser": "^1.19.0",
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
@@ -10,6 +11,7 @@
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-grid-gallery": "^0.5.5",
+    "react-hook-form": "^7.52.0",
     "react-icons": "^3.8.0",
     "react-images": "^0.5.19",
     "react-loading": "^2.0.3",

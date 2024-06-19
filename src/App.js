@@ -67,10 +67,8 @@ class App extends Component {
         <div className="container">
           <Profile />
         </div>
-        <div className="container">
-          <Snake />
-        </div>
         <div className="container-fluid">
+          <Snake />
           <Projects />
         </div>
         <div className="container">
