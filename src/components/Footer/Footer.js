@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaTwitterSquare, FaLinkedin, FaGithub, } from "react-icons/fa";
+import { FaLinkedin, FaGithub, } from "react-icons/fa";
 
 import './Footer.css'
 
@@ -10,9 +10,7 @@ const footer = props => (
     <div id="bottominfo">
       <ul>
         <li><a href="https://github.com/sburchfield" target="_blank" rel="noopener noreferrer" title="Github Account"><FaGithub /></a></li>
-        <li><a href="https://www.facebook.com/sam.burchfield.5" target="_blank" rel="noopener noreferrer" title="facebook account"><FaFacebook /></a></li>
         <li><a href="https://www.linkedin.com/in/sam-burchfield-13572913a/" target="_blank" rel="noopener noreferrer" title="Linkedin Account"><FaLinkedin /></a></li>
-        <li><a href="https://twitter.com/SamBurchWeb" target="_blank" rel="noopener noreferrer" title="twitter account"><FaTwitterSquare /></a></li>
       </ul>
     </div>
     <ul className="nav justify-content-center" id="footerNav">
