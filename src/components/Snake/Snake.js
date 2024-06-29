@@ -7,6 +7,7 @@ import SnakeGame from './SnakeGame';
 import SnakeHighScores from './SnakeHighScores.js';
 
 import './Snake.css';
+import DirectionPad from '../DirectionalPad/DirectionalPad.js';
 
 const Snake = () => {
 
@@ -58,15 +59,16 @@ const Snake = () => {
       }, [reset, isSubmitSuccessful]);
 
     return (
-        <div id="snake_wrapper">
+        <div id="snake">
             <h2 className="pt-4 text-center">Snake</h2>
             <div className="row justify-content-center">
                 <div className="col-lg-4">
-                    <div className="text-center" style={{ padding: "5rem 4rem 0 4rem", fontSize: "0.8rem"}}>
+                    <div className="text-center" style={{ padding: "1rem 4rem", fontSize: "0.8rem"}}>
                         <p>Use the arrow keys to move the snake.</p>
                         <p>Collect the apples to grow.</p>
                         <p>Don't run into yourself.</p>
                     </div>
+                    
                 </div>
                 <div className="col-lg-4">
                     <SnakeGame
@@ -86,10 +88,13 @@ const Snake = () => {
                         highScores={highScores}
                         errors={errors} />
                 </div>
-                <div className="col-lg-4"> 
-                    <SnakeHighScores
-                        highScores={highScores} />
+                <div className="col-lg-4" style={{ padding: "1rem 4rem", fontSize: "0.8rem"}}> 
+                    <DirectionPad setPlayerStartedMoving={setPlayerStartedMoving}  />
                 </div>
+            </div>
+            <div style={{marginTop: "2rem"}}>   
+            <SnakeHighScores
+                        highScores={highScores} />
             </div>
         </div>
     )

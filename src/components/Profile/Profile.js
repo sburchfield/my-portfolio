@@ -6,7 +6,7 @@ import './Profile.css'
 
 configureAnchors({offset: -60})
 
-const profile = props => (
+const profile = () => (
   <ScrollableAnchor id="profile">
 			<div className="row" id="profileInner">
 				<div id="about" className="col-lg animated slideInLeft">
