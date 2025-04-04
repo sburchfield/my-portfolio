@@ -213,7 +213,7 @@ const SnakeGame = ({ isGameStarted, setIsGameStarted, gameOver, setGameOver,
             </div>
             ) : null 
           )}
-            <canvas ref={canvasRef} width="372" height="372" style={{ display: 'block', margin: '0 auto', position: "relative" }}></canvas>
+            <canvas ref={canvasRef} width="400" height="400" style={{ display: 'block', margin: '0 auto', position: "relative" }}></canvas>
         </div>
       </div>
   );
